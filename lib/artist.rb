@@ -16,7 +16,7 @@
 #started at 9:36pm
 
 class Artist
-  attr_reader :name, :genre
+  attr_reader :name
   @@all = []
   def initialize(name)
     @name = name
