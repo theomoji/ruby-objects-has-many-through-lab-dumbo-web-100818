@@ -18,4 +18,3 @@ class Song
   end
 
 end
-#decided that song is the single source of truth so access things through Song class.
