@@ -16,36 +16,7 @@
 #started at 9:36pm
 
 class Artist
-  attr_accessor :name
-    @@all = []
-  def initialize(name)
-    @name = name
-    @@all << self
-  end
-
-  def genres
-    self.songs
-  end
-
-
-  def new_song(name, genre)
-    Song.new(name, self, genre)  #Song initialize (name, artist, genre)
-  end
-
-
-  def songs
-    Song.all.select do |song|
-      song.artist == self #song.artist is an instance of Artist class
-  end
-end
-  #output of this function is an array of songs that THIS artist wrote
-
-  def genres   #songs return all of the songs by this artist
-    songs.select do |song|
-      song.genre
-  end.uniq  #or you can assign variable then call .uniq on it.
-
-  end
+  @@all = []
 
 
 end
