@@ -32,4 +32,8 @@ class Artist
     Song.new(name, genre)
   end
 
+  def genres
+    #iterate through song class
+  end
+
 end
