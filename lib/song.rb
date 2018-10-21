@@ -3,8 +3,15 @@
 # A song should be initialized with a name, an artist, and a genre, and be saved in the @@all array.
 
 class Song
+  @@all = []
+  attr_reader :name, :artist, :genre
 
-
+  def initialize(name, artist, genre)
+    @name = name
+    @artist = name
+    @genre = genre
+    @@all << self
+  end
 
 end
 #decided that song is the single source of truth so access things through Song class.
