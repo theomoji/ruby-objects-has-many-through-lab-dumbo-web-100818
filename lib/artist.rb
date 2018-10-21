@@ -13,7 +13,7 @@
 #   achieve this.
 # - The `Artist` class needs an instance method, `#genres` that iterates over that
 #   artist's songs and collects the genre of each song.
-
+#started at 9:36pm
 
 class Artist
   attr_accessor :name
