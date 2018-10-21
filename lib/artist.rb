@@ -15,6 +15,7 @@
 #   artist's songs and collects the genre of each song.
 #started at 9:36pm
 
+require 'pry'
 class Artist
   attr_reader :name
   @@all = []
@@ -36,7 +37,7 @@ class Artist
   end
 
   def genres
-    songs.map {|song| song.genre}
+    songs.map {|song| song.genre binding.pry}
   end
 
 end
