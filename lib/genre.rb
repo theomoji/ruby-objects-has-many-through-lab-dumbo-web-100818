@@ -10,27 +10,12 @@
 
 class Genre
   @@all = []
-
+  attr_reader :name
   def initialize(name)
     @name = name
-    @@all << name
+    @@all << self
   end
 
-  def self.all
-    @@all
-  end
-
-  def songs
-    Song.all.select do |song|
-      song.genre == self
-    end #output of this function is an array of songs (Song instances) that matches THIS genre
-  end
-
-  def artists
-    songs.map do |song|
-      song.artist #getter method in Song.
-    end.uniq
-  end
 
 
 end
