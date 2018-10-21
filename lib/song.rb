@@ -13,7 +13,9 @@ class Song
     @@all << self
   end
 
-
+  def self.all
+    @@all
+  end
 
 end
 #decided that song is the single source of truth so access things through Song class.
