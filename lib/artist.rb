@@ -31,8 +31,8 @@ class Artist
     Song.new(name, genre, self)
   end
 
-  def genres
-    #iterate through song class
+  def songs
+    Song.all.select {|song| song.artist == self}
   end
 
 end
