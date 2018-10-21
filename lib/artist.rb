@@ -37,7 +37,13 @@ class Artist
   end
 
   def genres
-    songs.map {|song| song.genre binding.pry}
+    songs.map {|song| song.genre}
   end
 
 end
+
+describe "#genres" do
+  it "has many genres, through songs" do
+    jay_z = Artist.new("Jay-Z")
+    rap = Genre.new("rap")
+    ninety_nine_problems = jay_z.new_song("Ninety Nine Problems", rap)
