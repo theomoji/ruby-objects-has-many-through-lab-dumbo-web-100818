@@ -16,10 +16,11 @@
 #started at 9:36pm
 
 class Artist
-  attr_reader :name
+  attr_reader :name, :genre
   @@all = []
   def initialize
     @name = name
+    @genre = genre
     @@all << self
   end
 
@@ -27,6 +28,8 @@ class Artist
     @@all
   end
 
-
+  def new_song(name, genre)
+    Song.new(name, genre)
+  end
 
 end
