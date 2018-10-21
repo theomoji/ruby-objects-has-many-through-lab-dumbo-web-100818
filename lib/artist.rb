@@ -24,7 +24,7 @@ class Artist
   end
 
   def self.all
-    @@all.map {|name| name}
+    @@all
   end
 
   def new_song(name, genre)
