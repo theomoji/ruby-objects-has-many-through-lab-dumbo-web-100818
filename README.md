@@ -36,7 +36,7 @@ Start with the `Artist`/`Song`/`Genre` domain.
   belongs to the artist.
  The `Artist` class needs an instance method, `#songs`, that iterates through all
   songs and finds the songs that belong to that artist. Try using `select` to
-  achieve this. --> -->
+  achieve this. -->
 - The `Artist` class needs an instance method, `#genres` that iterates over that
   artist's songs and collects the genre of each song.
 
