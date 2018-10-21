@@ -16,14 +16,17 @@
 #started at 9:36pm
 
 class Artist
+  attr_reader :name
   @@all = []
-def initialize
-  @@all << self 
-end 
+  def initialize
+    @name = name
+    @@all << self
+  end
+
+  def self.all
+    @@all
+  end
 
 
-  def self.all 
-    @@all 
-  end 
 
 end
