@@ -1,8 +1,10 @@
+
+#started at 9:36pm
+
+require 'pry'
 class Artist
-  attr_accessor :name
-
+  attr_reader :name
   @@all = []
-
   def initialize(name)
     @name = name
     @@all << self
@@ -17,10 +19,12 @@ class Artist
   end
 
   def songs
-    Song.all.select { |song| song.artist == self }
+    Song.all.select {|song| song.artist == self}
   end
 
-  def genres
-    songs.map(&:genre)
-  end
+  # def genres
+  #   songs.map{|song|song.genre}
+  # end
+
+
 end
